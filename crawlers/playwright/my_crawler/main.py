@@ -11,7 +11,7 @@ from crawlers.base.const import LOGGING
 
 
 def main() -> None:
-    """Main crawler function."""
+    """Run crawler."""
 
     logging.info('Start crawler...')
     with sync_playwright() as pw:
@@ -29,7 +29,7 @@ def main() -> None:
 
 
 def start_crawling() -> Any:
-    """Some crawl logic."""
+    """Crawl logic."""
 
     for i in range(1, 10):
         yield i

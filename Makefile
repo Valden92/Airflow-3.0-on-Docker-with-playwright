@@ -31,3 +31,7 @@ sync:
 clean:
 	$(COMPOSE) down -v --remove-orphans --rmi all
 	rm -rf $(PROJECT_ROOT)/data
+
+.PHONY: lint
+lint:
+	uv run -- ruff check crawlers dags operators

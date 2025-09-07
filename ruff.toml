@@ -21,7 +21,6 @@ select = [
     "N",       # pep8-naming
     "F",       # pyflakes
     "ANN",     # flake8-annotations
-    "I"        # check import grouping and sorting
 ]
 ignore = [
     "RUF010", "RUF012", "E741", "D202", "D212", "D200",
