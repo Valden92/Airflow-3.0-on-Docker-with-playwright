@@ -1,0 +1,39 @@
+[project]
+name = "Airflow_on_Docker_with_playwright"
+description = "How to up Airflow >= 3.0 on Docker with playwright"
+readme = "README.md"
+requires-python = ">=3.12"
+dynamic = ["version"]
+authors = [
+    {name = "Free Reality Team"}
+]
+keywords = ["airflow", "crawler"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "pydantic==2.11.7",
+    "dateparser==1.2.2",
+    "playwright==1.55.0"
+]
+
+[tool.setuptools]
+py-modules = []
+
+[dependency-groups]
+lint = [
+    "ruff==0.12.12"
+]
+test = [
+    "pytest==8.4.2",
+]
+airflow = [
+    "apache-airflow==3.0.6"
+]
+
+[project.urls]
+Homepage = "https://github.com/Valden92/Airflow-3.0-on-Docker-with-playwright"
+Repository = "https://github.com/Valden92/Airflow-3.0-on-Docker-with-playwright"
